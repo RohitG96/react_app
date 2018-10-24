@@ -50,7 +50,7 @@ class Board extends React.Component {
   changeStateText = (inp) => {
     if (inp == 'DEL') {
       if (this.state.text.length != 0)
-        this.setState({ text: this.state.text.slice(0, -1) })
+        this.setState({ text: (this.state.text).slice(0, -1) })
     }
     else if(inp == '=')
     {
@@ -131,3 +131,4 @@ class Board extends React.Component {
 // );
 
 export default App;
+
